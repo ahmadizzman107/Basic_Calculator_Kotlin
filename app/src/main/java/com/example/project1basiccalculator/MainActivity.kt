@@ -3,9 +3,12 @@ package com.example.project1basiccalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.android.gms.ads.AdRequest
 import kotlinx.android.synthetic.main.buttons.*
 import kotlinx.android.synthetic.main.input_layout.*
+import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import com.google.android.gms.ads.MobileAds
 
 class MainActivity : AppCompatActivity() {
     var hasCalculate:Boolean = false
@@ -14,6 +17,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Initialize & load Mobile Ads
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
 
         //Number Listeners
         num_0.setOnClickListener { appendOnClick(true,"0") }
