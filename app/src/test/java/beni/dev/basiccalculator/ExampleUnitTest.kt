@@ -1,4 +1,4 @@
-package com.example.project1basiccalculator
+package beni.dev.basiccalculator
 
 import org.junit.Test
 

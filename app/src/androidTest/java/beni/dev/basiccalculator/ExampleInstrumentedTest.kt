@@ -1,4 +1,4 @@
-package com.example.project1basiccalculator
+package beni.dev.basiccalculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
