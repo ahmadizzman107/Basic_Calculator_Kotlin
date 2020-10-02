@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Basic Calculator</string>
-    <string name="sample_input"></string>
-    <dimen name="butt_height">105dp</dimen>
-    <dimen name="txt_size">30sp</dimen>
+    <dimen name="butt_height">80dp</dimen>
+    <dimen name="txt_size">25sp</dimen>
 </resources>
